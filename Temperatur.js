@@ -16,3 +16,11 @@ firebase.initializeApp(firebaseConfig);
 
 const db = firebase.database();
 
+var ref = firebase.database().ref("Sensor3-Terrariet");
+
+ref.on("value", function(snapshot) {
+  snapshot.forEach(function(childSnapshot) {
+    var childData = childSnapshot.val();
+    console.log(childData);
+  });
+});
