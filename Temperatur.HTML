@@ -21,96 +21,108 @@
     </script>
   <html>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
- <body>
- 
- <head>
-   <style>
- 
- img {
-  position: absolute;
-  left: 730px;
-  top: 0px;
-  z-index: -1;
-  size: 50px;
-  max-width: 40%;
-  margin-top: 50px;
-  z-index: -1;
-}
+    <body>
+      <head>
+          <style>
 
- 
- 
-i.class {
-  margin-top: -100;
-  margin-left: 800px;
-}
+        body {
+          background-color: rgb(226, 246, 253);
+        }
 
+        .image {
+          display: flex;
+          justify-content: center;
+        }
 
+        .headline {
+          display: flex;
+          justify-content: center;
+        }
 
- body {
-  background-color: rgb(226, 246, 253);
-}
+        .image2 {
+          position: absolute;
+          top: 50px;
+          left: 730px;
+        }
 
- div {
-    background-color: rgb(176, 220, 242);
-    width: 600px;
-    border: 15px solid rgb(92, 142, 195);
-    padding: 50px;
-    margin: 20px;
-    margin-left: 10;
-    border-radius: 15px;
-  }
+        .image2cont {
+          width: 510px;
+          height: 270px;
+        }
 
+        .container {
+          display: flex;
+          border: solid;
+          border-width: 15px;
+          border-color: rgb(92, 142, 195);
+          background-color: rgb(176, 220, 242);
+          height: 200px;
+          width: 700px;
+          text-align: center;
+          justify-content: center;
+          color: rgb(20, 2, 48);
+          font-size: 31px;
+          border-radius: 15px;
+          position: absolute;
+          top: 130px;
+          margin: 10px;
+          font-weight: bold;
+        }
 
-  div.second {
-  height: 400px;
-  width: 20%;
-  background-color:  rgb(176, 220, 242);
-  padding-top: 50px;
-  margin: 0px;
-  margin-bottom: 40px;
-  margin-top: -100;
-  margin-left: 800px;
-}
+        .content {
+          display: flex; 
+          align-items: center;
+        }
 
-* {
-  text-align: center;
-  color: rgb(20, 2, 48);
-} 
+        .container2 {
+          display: flex;
+          border: solid;
+          border-width: 15px;
+          border-color: rgb(92, 142, 195);
+          background-color: rgb(176, 220, 242);
+          height: 400px;
+          width: 250px;
+          padding: 50px;
+          justify-content: center;
+          text-align: center;
+          color: rgb(20, 2, 48);
+          font-size: 31px;
+          border-radius: 15px;
+          position: absolute;
+          top: 280px;
+          left: 800px;
+          margin: 10px;
+          font-weight: bold;
+        }
 
- h1 {
-  text-align: center;
-  color:rgb(20, 2, 48)
- }
+          </style>
+      </head>
+    <div class="maincontainer">
+      <div class="image">
+          <i class="material-icons" style="font-size:48px;color:red;">cloud</i>
+      </div>
 
+      <div class="headline">
+          <h1 class="headlinecont"> Välkommen </h1>
+      </div>
 
+      <div class="image2">
+          <img class="image2cont" src="https://i0.wp.com/builtech.ae/wp-content/uploads/2019/08/abb-logo-png-transparent.png?w=2000&ssl=1">
+      </div>
 
+      <div class="container">
+          <div class="content">
+              Hej och välkommen till klass 220S <br> tempratur-projekt. Här visas tempraturer <br> från olika ställen i abb-spets byggnaden.
+          </div>
+      </div>
 
-
-
-
- 
-  </style>
- </head>
-
-
- <i class="material-icons" style="font-size:48px;color:red;">cloud</i>
-
- 
- <h1> Välkommen <h1>
-
-  <img src="https://i0.wp.com/builtech.ae/wp-content/uploads/2019/08/abb-logo-png-transparent.png?w=2000&ssl=1">
-
-<div>
-  Hej och välkommen till klass 220S tempratur-projekt. Här visas tempraturer från olika ställen i abb-spets byggnaden. 
-</div>
-
-<div class="second">
-  oi hello oe i cidhie ic cici
-</div>
-
-
-
-
+      <div class="container2">
+          <div class="content2">
+              oi hello oe i cidhie ic cici
+          </div>
+      </div>
+    </div>
+  </body>
 <html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <body>
@@ -145,4 +157,3 @@ new Chart("myChart", {
 
   </body>
  </html>
-</script>
