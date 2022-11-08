@@ -1,28 +1,34 @@
+/* Hela bakgrunden */
 body {
     background-color: rgb(226, 246, 253);
   }
 
+/* Lilla röda molnet ovanför välkommen texten */
   .image {
     display: flex;
     justify-content: center;
   }
 
+/* Texten under röda molnet högst upp */
   .headline {
     display: flex;
     justify-content: center;
   }
 
+/* containern som innehåller ABB loggan */
   .image2 {
     position: absolute;
     top: 50px;
     left: 730px;
   }
 
+/* ABB loggan */
   .image2cont {
     width: 510px;
     height: 270px;
   }
 
+/* Textlådan ovanför grafen */
   .container {
     display: flex;
     border: solid;
@@ -42,11 +48,13 @@ body {
     font-weight: bold;
   }
 
+/* Texten inuti textlådan ovanför grafen */
   .content {
     display: flex; 
     align-items: center;
   }
 
+/* Textlådan under stora ABB loggan */
   .container2 {
     display: flex;
     border: solid;
@@ -68,6 +76,9 @@ body {
     font-weight: bold;
   }
 
+/* content2 är innehållet i container2 */
+
+/* Grafen */
   .theChart {
     position: absolute;
     top: 400px;
