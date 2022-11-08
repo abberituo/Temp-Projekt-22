@@ -3,13 +3,13 @@ body {
     background-color: rgb(226, 246, 253);
   }
 
-/* Lilla röda molnet ovanför välkommen texten */
+/* Lilla röda molnet ovanför rubriken */
   .image {
     display: flex;
     justify-content: center;
   }
 
-/* Texten under röda molnet högst upp */
+/* Rubriken under röda molnet högst upp */
   .headline {
     display: flex;
     justify-content: center;
