@@ -13,13 +13,17 @@
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       let database = firebase.database().ref()
+
+      var xValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
+
+
       database.on("value", (temp)=>{
         let data = temp.val()
 
         let S1h = data["Sensor1-Vardagsrummet"]["Humidity"]
         let keys1 = Object.keys(S1h)
         let Hum1 = S1h[keys1[keys1.length-1]]
-
+        
         let S1t = data["Sensor1-Vardagsrummet"]["Temperature"]
         let keys1t = Object.keys(S1t)
         let Temp1 = S1t[keys1t[keys1t.length-1]]
@@ -63,3 +67,48 @@
         console.log(Hum1,Hum2,Hum3,Hum4,Hum5)
         console.log(Temp1,Temp2,Temp3,Temp4,Temp5)
       })
+
+
+
+      new Chart("myChart", {
+        type: "line",
+        data: {
+          labels: xValues,
+          datasets: [{
+            data: [],
+            borderColor: "red",
+            fill: false
+          }, {
+            data: [300, 100, 1000, 5000, 1000, 4000, 2000, 1000, 200, 100],
+            borderColor: "green",
+            fill: false
+          }, {
+            data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+            borderColor: "blue",
+            fill: false
+          }]
+        },
+        options: {
+          legend: { display: false }
+        }
+      });
+
+      let dates = ["2022-11-8", "2022-11-7", "2022-11-6"]
+
+      var datumSelect  = document.getElementById('datum');
+
+      for (let i = 0; i < dates.length; i++) {
+        let option = document.createElement('option')
+        option.value = dates[i]
+        option.innerText = dates[i]
+
+        datumSelect.appendChild(option)
+      }
+
+
+      function getDataForDay() {
+        var room  = document.getElementById('rooms').value;
+        var datum  = document.getElementById('datum').value;
+
+        console.log(room, datum)
+      }

@@ -2,52 +2,55 @@ body {
     background-color: rgb(226, 246, 253);
   }
 
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
   .image {
     display: flex;
     justify-content: center;
+    text-align: center;
   }
 
-  .headline {
+  /* .headline {
     display: flex;
     justify-content: center;
-  }
+  } */
 
-  .image2 {
+  /* .image2 {
     position: absolute;
     top: 50px;
     left: 730px;
-  }
+  } */
 
-  .image2cont {
+  /* .image2cont {
     width: 510px;
     height: 270px;
-  }
+  } */
 
-  .container {
-    display: flex;
+  .content {
     border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-width: 15px;
     border-color: rgb(92, 142, 195);
     background-color: rgb(176, 220, 242);
     height: 200px;
     width: 700px;
     text-align: center;
-    justify-content: center;
     color: rgb(20, 2, 48);
     font-size: 31px;
     border-radius: 15px;
-    position: absolute;
-    top: 130px;
     margin: 10px;
     font-weight: bold;
   }
 
-  .content {
-    display: flex; 
-    align-items: center;
-  }
-
-  .container2 {
+  /* .container2 {
     display: flex;
     border: solid;
     border-width: 15px;
@@ -61,14 +64,8 @@ body {
     color: rgb(20, 2, 48);
     font-size: 31px;
     border-radius: 15px;
-    position: absolute;
     top: 280px;
     left: 800px;
     margin: 10px;
     font-weight: bold;
-  }
-
-  .theChart {
-    position: absolute;
-    top: 400px;
-  } 
+  } */
