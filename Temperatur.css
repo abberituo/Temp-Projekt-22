@@ -3,6 +3,7 @@ body {
     background-color: rgb(226, 246, 253);
   }
 
+/* Containern som innehåller allt förutom röda molnet */
   .container{
     display: flex;
     justify-content: center;
@@ -11,28 +12,14 @@ body {
     gap: 30px;
   }
 
+/* Röda molnet */
   .image {
     display: flex;
     justify-content: center;
     text-align: center;
   }
 
-  /* .headline {
-    display: flex;
-    justify-content: center;
-  } */
-
-  /* .image2 {
-    position: absolute;
-    top: 50px;
-    left: 730px;
-  } */
-
-  /* .image2cont {
-    width: 510px;
-    height: 270px;
-  } */
-
+/* Textrutans innehåll */
   .content {
     border: solid;
     display: flex;
@@ -50,23 +37,3 @@ body {
     margin: 10px;
     font-weight: bold;
   }
-
-  /* .container2 {
-    display: flex;
-    border: solid;
-    border-width: 15px;
-    border-color: rgb(92, 142, 195);
-    background-color: rgb(176, 220, 242);
-    height: 400px;
-    width: 250px;
-    padding: 50px;
-    justify-content: center;
-    text-align: center;
-    color: rgb(20, 2, 48);
-    font-size: 31px;
-    border-radius: 15px;
-    top: 280px;
-    left: 800px;
-    margin: 10px;
-    font-weight: bold;
-  } */

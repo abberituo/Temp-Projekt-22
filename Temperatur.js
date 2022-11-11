@@ -39,6 +39,9 @@
       //   let keys2t = Object.keys(S2t)
       //   let Temp2 = S2t[keys2t[keys2t.length-1]]
 
+        const d = new Date();
+        const date = d.getDate()
+        const hour = d.getHours()
 
       //   let S3h = data["Sensor3-Terrariet"]["Humidity"]
       //   let keys3 = Object.keys(S3h)
