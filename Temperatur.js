@@ -28,12 +28,10 @@
         if (snapshot.val()) {
           data = snapshot.val()
           var datumSelect  = document.getElementById('datum');
-          let months = Object.keys(data['saved'])
-
-          console.log(months)
+          let months = Object.keys(data['Sensor2-Pingisrummet']['saved'])
 
           for (let i = 0; i < months.length; i++) {
-            let days = Object.keys(data['saved'][months[i]])
+            let days = Object.keys(data['Sensor2-Pingisrummet']['saved'][months[i]])
             console.log(days)
 
             for (let j = 0; j < days.length; j++) {
@@ -48,15 +46,16 @@
           }
           
         }
-      });
+      })
 
+      var x = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
 
       var myChart = new Chart("myChart", {
         type: "line",
         data: {
-          labels: xValues,
+          labels: x,
           datasets: [ {
-            data: [300, 100, 1000, 5000, 1000, 4000, 2000, 1000, 200, 100],
+            data: [],
             borderColor: "green",
             fill: false,
             label: 'Humidity'
@@ -82,7 +81,7 @@
 
         var firebaseData = [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100]
 
-        let values = data['saved'][datumSplit[1]][datumSplit[2]]
+        let values = data['Sensor2-Pingisrummet']['saved'][datumSplit[1]][datumSplit[2]]
         
         xValues = Object.keys(values)
         tempValues = []
